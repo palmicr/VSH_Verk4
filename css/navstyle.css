@@ -1,0 +1,168 @@
+body {
+	margin-top: 3em;
+}
+/*nav menu transitions */
+nav li { 
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;  
+}
+nav ul li a { 
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s; 
+}
+nav ul li ul { 
+	-webkit-transition: all 1s;
+	transition: all 1s;  
+}
+nav ul li ul li { 
+	-webkit-transition: height 0.5s; 
+	transition: height 0.5s;
+}
+nav input.show-menu {
+	-webkit-transition: height 0.5s; 
+	transition: height 0.5s;
+}
+/* nav heldur utan um menu */
+nav {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 100;
+		width: 100%;
+		background-color: transparent;
+	}
+/*Strip the ul of padding and list styling*/
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display: none; /* Make dropdown links appear when #menu is clicked */
+}
+
+/*Create vertical spacing*/
+nav ul li {
+	border-bottom: 1px solid #835a47;
+}
+/*Make all menu links full width*/
+nav ul li, 
+nav ul li a {
+	width: 100%;
+}
+/* Display 'show menu' link ! nýtt */
+.show-menu {
+	display:block;
+	width:100%;
+}
+
+/*Style for menu links*/
+nav ul li a {
+	display:block;
+	width: 100%;
+	height: 3em;
+	text-align: center;
+	line-height: 3em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+/*Hover state for top level links*/
+nav ul li:hover a {
+	background: #835a47;
+}
+
+/*Style for dropdown links*/
+nav ul li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+/*Hover state for dropdown links*/
+nav ul li:hover ul a:hover {
+	background: #835a47;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+nav ul li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+nav ul li ul li {
+	display: block;
+	/*float: none;*/
+
+}
+
+/*Prevent text wrapping*/
+nav ul li ul li a {
+	width: 100%; 
+	padding: 0 1em;
+}
+
+/*Display the dropdown on hover*/
+ nav ul li a:hover + .hidden, 
+ 	.hidden:hover {
+		display: block;
+	}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #835a47;
+	text-align: center;
+	padding: 1em 0 0 0;
+	display: block;  /*var none */
+	width: 100%;  /*nýtt*/
+	height: 2em;
+}
+
+/*Hide checkbox (symbol)*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+    -webkit-transition: height 0.5s; 
+	transition: height 0.5s;
+}
+
+/*Brakepoint 60em + */
+
+@media screen and (min-width: 59em){
+	body{
+		margin-top: 3.5em;
+	background: transparent url('../img/bg.png') repeat-x;  
+	}
+
+	nav ul {
+		display: block;
+	}
+	/*Create a horizontal list with spacing*/
+	nav ul li {
+		float: left; 		/*nýtt*/
+		margin-right: 1px;
+		width: 10em; 		/*nýtt*/
+	}
+	/*Style for menu links*/
+	nav ul li a {
+		display:inline-block; /*var block */
+	}
+	/*Display the dropdown on hover  nýtt*/
+ 	nav ul li a:hover + .hidden, 
+ 	.hidden:hover {
+		display: block;
+	}
+	/*hide 'show menu' - nýtt*/
+	.show-menu {
+		display:none;
+	}
+}

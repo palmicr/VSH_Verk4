@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Grindakerfi Pure CSS">
+        <meta name="author" content="Tækniskólinn - GJG">
+        <title>DEMO verkefni 4. VSH2A.</title>
+        <!-- Pure CDN - Content Distribution Network-->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/navstyle.css">
+    </head>
+    <body>
+        <nav>
+            <label for="show-menu" class="show-menu">Sýna efnisyfirlit &#65516;</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="index.html">Forsíða</a></li>
+                <li>
+                    <a href="#">Myndir &#65516;</a>
+                    <ul class="hidden">
+                        <li><a href="myndir.html">Myndasafn 1</a></li>
+                        <li><a href="#">Myndasafn 2</a></li>
+                        <li><a href="#">Kvikmyndir</a></li>
+                    </ul>
+                </li>
+                <li><a href="tafla.html">Tafla</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="hnappar.html">Hnappar</a></li>
+                <li>
+                    <a href="#">Bjargir &#65516;</a>
+                    <ul class="hidden">
+                        <li><a href="http://www.purecss.io" target="_blank">PureCSS</a></li>
+                        <li><a href="http://bradfrost.github.io/this-is-responsive/index.html" target="_blank">RDW Resources</a></li>
+                        <li><a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">Material Design</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- row 1 -->
+        <header class="pure-g">
+        	<div class="pure-u-1 pure-u-sm-12-24 pure-u-md-10-24">
+            	<a href="index.html"><img src="img/logo.png" alt="Wisdom Pets. click for home." class=""></a>
+            </div>
+        	<div class="pure-u-1 pure-u-sm-12-24 pure-u-md-14-24">
+            	<img src="img/animals.jpg" alt="Nú eru góð ráð dýr!" class="">
+            </div>
+        </header>     
+        <!-- row 2 -->
+        <section class="pure-g">
+            <article class="pure-u-1 pure-u-md-1 pure-u-lg-16-24 flright">
+                <!-- nested row 1-->
+                <section class="pure-g">
+                    <div class="pure-sm-2-24 pure-u-md-4-24 pure-u-lg-6-24">
+                        <!-- þetta er spássía fyrir md og lg + -->
+                    </div>
+                    <div class="pure-u-1 pure-sm-22-24 pure-u-md-20-24 pure-u-lg-18-24">
+                        <h1>Tafla</h1>
+                        <table class="pure-table">
+                            <thead>
+                                <tr class="">
+                                    <th>#</th>
+                                    <th>Make</th>
+                                    <th>Model</th>
+                                    <th>Year</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="pure-table-odd">
+                                    <td class="pure-sm-6-24">1</td>
+                                    <td class="pure-sm-6-24">Chevrolet</td>
+                                    <td class="pure-sm-6-24">Super-Duper-Deluxe-Accord</td>
+                                    <td class="pure-sm-6-24">2009</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>Toyota</td>
+                                    <td>Camry</td>
+                                    <td>2012</td>
+                                </tr>
+
+                                <tr class="pure-table-odd">
+                                    <td>3</td>
+                                    <td>Hyundai</td>
+                                    <td>Elantra</td>
+                                    <td>2010</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ford</td>
+                                    <td>Focus</td>
+                                    <td>2008</td>
+                                </tr>
+
+                                <tr class="pure-table-odd">
+                                    <td>5</td>
+                                    <td>Nissan</td>
+                                    <td>Sentra</td>
+                                    <td>2011</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>BMW</td>
+                                    <td>M3</td>
+                                    <td>2009</td>
+                                </tr>
+
+                                <tr class="pure-table-odd">
+                                    <td>7</td>
+                                    <td>Honda</td>
+                                    <td>Civic</td>
+                                    <td>2010</td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td>Kia</td>
+                                    <td>Soul</td>
+                                    <td>2010</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <!-- nested row 2-->
+                <section class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24">
+                        <h4><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</h4>
+                        <p>Dogs, cats, rats and snakes are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+                        <p><a href="#" class="pure-button pure-button-primary">
+                        <i class="fa fa-home"></i>&nbsp; Home</a></p>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24">
+                        <h4><span class="glyphicon glyphicon-ok"></span> Checkups</h4>
+                        <p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health unearth problems issues down the road.  </p>
+                        <p> <a href="#" class="pure-button button-warning">
+                            <i class="fa fa-cog fa-lg fa-spin"></i>&nbsp;  Settings
+                            </a></p>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24">
+                        <h4><span class="glyphicon glyphicon-heart"></span> Senior Pets</h4>
+                        <p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+                        <p> <a href="#" class="pure-button pure-button-primary">
+                            <i class="fa fa-shopping-cart"></i>&nbsp; Checkout
+                            </a></p>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-6-24">
+                        <h4><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</h4>
+                        <p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+                        <p> <a href="#" class="pure-button pure-button-primary"> 
+                            <i class="fa fa-camera-retro"></i>&nbsp; fa-camera-retro
+                            </a>
+                        </p>
+                    </div>
+                </section><!-- end nested row -->
+            </article>    
+        	<aside class="pure-u-1 pure-u-md-1 pure-u-lg-8-24 flleft">
+                <h3>Keeping your pet's chompers clean and healthy</h3>
+                <p>You know the importance of brushing your own teeth, but did you know that dogs and cats also need regular attention to their pearly whites? Poor dental hygiene in pets can lead to periodontal disease, a bacterial infection which causes bad breath, drooling, tooth decay, and tooth loss.</p>
+                <p>As always, if you have questions about your pet’s dental or health care, please <a href="#">contact Wisdom Pet Medicine</a> for advice.</p>
+            </aside>
+        </section><!-- end row 2 -->
+        <!-- row 3 -->
+        <footer class="pure-u-1">
+            <p>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.</p>
+        </footer>
+        <!-- javascript -->
+	        <script src="js/ui.js"></script>
+    </body>
+</html>
